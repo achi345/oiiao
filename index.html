@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>고양이 버튼</title>
+</head>
+<body>
+    <h1>버튼 클릭 예제</h1>
+    <p id="text">성전아... 버튼을 눌러봐!</p>
+
+    <!-- 처음에는 숨겨진 이미지 -->
+    <img id="myImage" src="https://th.bing.com/th/id/OIP.L5yCQIs4iE6WKHXZs8-j1QHaDt?w=345&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="숨겨진 고양이" width="300" style="display:none;">
+
+    <br><br>
+
+    <button onclick="becomeCat()">성전아</button>
+
+    <script>
+        function becomeCat() {
+            // 글자 바꾸기
+            document.getElementById("text").innerHTML = "넌 이제 고양이가 된거야!";
+            
+            // 이미지 보이기
+            document.getElementById("myImage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
